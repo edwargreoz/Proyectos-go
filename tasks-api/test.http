@@ -1,0 +1,17 @@
+### Listar tareas
+GET http://localhost:8080/tasks
+
+### Crear tarea
+POST http://localhost:8080/tasks
+Content-Type: application/json
+
+{"title": "Aprender Go"}
+
+### Actualizar tarea
+PUT http://localhost:8080/tasks/1
+Content-Type: application/json
+
+{"title": "Aprender Go bien", "completed": true}
+
+### Eliminar tarea
+DELETE http://localhost:8080/tasks/1
